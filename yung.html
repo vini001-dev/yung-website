@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My football Website</title>
+    <style>
+    html {
+    scroll-behavior: smooth;
+}
+    body {
+    background-color: #eeeeee;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+    h1 {
+        color: red;
+    }
+
+    h2 {
+        color: #c8102e;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    img {
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 15px;
+    }
+    header {
+    background-color: #c8102e;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+
+    header h1 {
+    color: white;
+    }
+    nav {
+    margin: 20px;
+    }
+    nav a {
+    background-color: #c8102e;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    }
+    nav a:hover {
+    background-color: black;
+    }
+    .content {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    }
+    footer {
+    background-color: #c8102e;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .player-card {
+    display: block;
+    width: auto;
+    margin: 15px;
+    }
+}
+    .player-card {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+    form {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button {
+    background-color: #c8102e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.welcome {
+    background-color: #c8102e;
+    color: white;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+.welcome h2 {
+    color: white;
+}
+    .top-button {
+    display: inline-block;
+    background-color: #c8102e;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+}
+    .hero-logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+    .player-gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+    .player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+    .player-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #c8102e;
+    color: white;
+} 
+    ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #c8102e;
+    color: white;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 5px;
+}
+    .trophy-image {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+    .motto {
+    background-color: #c8102e;
+    color: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.motto h2 {
+    color: white;
+}
+    form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+    form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+    form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+} 
+    form input:focus,
+form textarea:focus {
+    border-color: #c8102e;
+    outline: none;
+}
+    form input::placeholder,
+form textarea::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+    h2 {
+    color: #c8102e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+    form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+    form input,
+form textarea {
+    transition: 0.3s;
+}
+form input:hover,
+form textarea:hover {
+    border-color: #c8102e;
+}
+form {
+    background-color: #f2f2f2;
+    padding: 25px;
+    border-radius: 15px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #c8102e;
+    color: white;
+}
+    </style>
+    </head>
+
+<body>
+    <h1>Hello, I'm Vincent</h1>
+    <p>Welcome to my first website.</p>
+    <header>
+    <h1>🔴 Liverpool FC</h1>
+    <p>You'll Never Walk Alone</p>
+ </header>
+ <nav>
+    <a href="#home">Home</a>
+    <a href="#players">Players</a>
+    <a href="#history">History</a>
+    <a href="#contact">Contact</a>
+</nav>
+    <div class="content"<section class="welcome" id="home">
+    <img src="liverpool.png" alt="Liverpool logo" class="hero-logo">
+    <h2>Welcome to My Liverpool Website</h2>
+    <p>Welcome to my Liverpool FC fan page. You'll Never Walk Alone!</p>
+</section>
+    <h2>My Favourite Team: Liverpool</h2>
+
+    <img src="Liverpool.png" alt="Liverpool logo" width="200">
+
+    <p>Liverpool FC is my favourite football club.</p>
+
+    <h2 id="players">My Favourite Liverpool Players</h2>
+
+    <ul>
+        <li>Mohamed Salah</li>
+        <li>Steven Gerrard</li>
+        <li>Luis Suarez</li>
+    </ul>
+    <h2>My Favourite Player</h2>
+
+    <div class="player-gallery">
+    <div class="player-card">
+    <h3>Mohamed Salah</h3>
+    <p><strong>Position:</strong> Right Wing</p>
+    <p><strong>Goals:</strong> 250</p>
+<p><strong>Assists:</strong> 100
+    <img src="salah.png" alt="Mohamed Salah" width="200">
+
+    <p>Mohamed Salah is one of my favourite Liverpool players.</p>
+    </div>
+    <div class="player-card">
+
+    <h3>Steven Gerrard</h3>
+    <p><strong>Position:</strong> Central Midfielder</p>
+    <p><strong>Goals:</strong> 186</p>
+<p><strong>Assists:</strong> 158</p>
+    <img src="gerrard.png" alt="Steven Gerrard" width="200">
+
+    <p>Steven Gerrard is one of Liverpool's greatest legends.</p>
+
+     </div>
+     <div class="player-card">
+
+    <h3>Luis Suarez</h3>
+    <p><strong>Position:</strong> Centre Forward</p>
+    <p><strong>Goals:</strong> 198</p>
+<p><strong>Assists:</strong> 109</p>
+    <img src="suarez.png" alt="Luis Suarez" width="200">
+
+    <p>Luis Suarez was a famous Liverpool forward.</p>
+
+    </div>
+</div>
+<h2>Player Stats</h2>
+
+<table>
+    <tr>
+        <th>Player</th>
+        <th>Position</th>
+        <th>Goals</th>
+    </tr>
+
+    <tr>
+        <td>Mohamed Salah</td>
+        <td>Right Wing</td>
+        <td>250</td>
+    </tr>
+
+    <tr>
+        <td>Steven Gerrard</td>
+        <td>Central Midfielder</td>
+        <td>186</td>
+    </tr>
+
+    <tr>
+        <td>Luis Suarez</td>
+        <td>Centre Forward</td>
+        <td>198</td>
+    </tr>
+</table>
+    <h2>Major Achievements</h2>
+    <img src="trophies.png" alt="Liverpool trophies" class="trophy-image">
+
+<ul>
+    <li>Premier League titles</li>
+    <li>UEFA Champions League titles</li>
+    <li>FA Cup trophies</li>
+    <li>League Cup trophies</li>
+</ul>
+    <section class="motto">
+    <h2>You'll Never Walk Alone</h2>
+    <p>One club. One family. One passion. 🔴</p>
+</section>
+    <section id="history">
+    <h2>Liverpool History</h2>
+    <p>
+        Liverpool FC was founded in 1892 and plays its home matches at Anfield.
+        The club has a long history of success in English and European football.
+    </p>
+    
+</section>
+<button onclick="changeColor()">Change Page 🔴</button>
+    <h2 id="contact">Contact Me</h2>
+
+<form>
+    <label for="name">Name:</label>
+    <input type="text" placeholder="your name">
+
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" placeholder="your email">
+
+    <br><br>
+    
+    <label for="message">Message:</label>
+<br>
+
+<textarea id="message" name="message" rows="5" cols="30"></textarea>
+
+<br><br>
+
+    <button type="button" onclick="sendMessage()">Send</button>
+</form>
+    <a href="#home" class="top-button">⬆ Back to Top</a>
+    </div>
+    <h2>More About Liverpool</h2>
+    <a href="https://www.Liverpoolfc.com/">Visit Liverpool FC</a>
+    
+    <p>Liverpool FC is my favourite football club. The club plays at Anfield and is known for its rich history and passionate supporters.</p>
+    <footer>
+    <p>© 2026 Vincent | Liverpool FC Fan</p>
+    </footer>
+    <script>
+    function changeColor() {
+        document.body.style.backgroundColor = "#c8102e";
+    }
+</script>
+    <script>
+function sendMessage() {
+    alert("Thanks, Vincent! Your message has been sent.");
+}
+</script>
+
+</body>
+</html>
